@@ -11,8 +11,9 @@ public class LoginAspect {
 	
 	
 	@Before("execution(public void addAcount())")
+	//@Before("execution(public void updateAcount())")
 	public void doSmthbefore(){
-		System.out.println("we are doing this before method");
+		System.out.println("we are doing this before method now update");
 	}
 	
 }
