@@ -24,6 +24,7 @@ public class AppStart {
 		
 		membDEO.addAcount();
 		
+		membDEO.addKuap();
 		
 		
 		context.close();

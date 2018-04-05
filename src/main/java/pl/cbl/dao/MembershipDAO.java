@@ -10,4 +10,8 @@ public class MembershipDAO {
 		System.out.println("membership acc");
 	}
 	
+	
+	public void addKuap() {
+		System.out.println("robimy kuat docks");
+	}
 }
