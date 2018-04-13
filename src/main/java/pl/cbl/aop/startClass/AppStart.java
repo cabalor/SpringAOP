@@ -18,9 +18,12 @@ public class AppStart {
 		
 		MembershipDAO membDEO = context.getBean("membershipDAO", MembershipDAO.class);
 		
-		acountDao.addAcount(); // calling method in dao class
 		
-		acountDao.addAcount();
+		Account ac = new Account();
+		
+		acountDao.addAcount(ac); // calling method in dao class
+		
+		acountDao.addAcount(ac);
 		
 		membDEO.addAcount();
 		
