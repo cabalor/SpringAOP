@@ -14,7 +14,8 @@ public class LoginAspect {
 	//@Before("execution(public void updateAcount())")
 	//@Before("execution(public void add*())")
 	//@Before("execution(* add*())")
-	@Before("execution(*add*(pl.cbl.aop.startClass.Account))")
+	//@Before("execution(*add*(pl.cbl.aop.startClass.Account))")
+	@Before("execution(*add*(pl.cbl.aop.startClass.Account, ..))")
 	public void doSmthbefore(){
 		System.out.println("we are doing this before method now update");
 	}

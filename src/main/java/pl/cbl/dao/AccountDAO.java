@@ -8,7 +8,7 @@ import pl.cbl.aop.startClass.Account;
 public class AccountDAO {
 
 	
-	public void addAcount(Account acc) {
+	public void addAcount(Account acc, boolean premAcc) {
 		System.out.println(getClass() + " - everything is fine");
 	}
 	

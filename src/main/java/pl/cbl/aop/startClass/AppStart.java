@@ -21,9 +21,9 @@ public class AppStart {
 		
 		Account ac = new Account();
 		
-		acountDao.addAcount(ac); // calling method in dao class
+		acountDao.addAcount(ac, true); // calling method in dao class
 		
-		acountDao.addAcount(ac);
+		acountDao.addAcount(ac, false);
 		
 		membDEO.addAcount();
 		
