@@ -13,5 +13,11 @@ public class AccountDAO {
 	}
 	
 	
+	public boolean write() {
+		
+		System.out.println("piszemy piszemy w koncie" + getClass());
+		
+		return true;
+	}
 	
 }

@@ -24,6 +24,7 @@ public class AppStart {
 		acountDao.addAcount(ac, true); // calling method in dao class
 		
 		acountDao.addAcount(ac, false);
+		acountDao.write();
 		
 		membDEO.addAcount();
 		

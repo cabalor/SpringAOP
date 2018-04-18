@@ -15,7 +15,9 @@ public class LoginAspect {
 	//@Before("execution(public void add*())")
 	//@Before("execution(* add*())")
 	//@Before("execution(*add*(pl.cbl.aop.startClass.Account))")
-	@Before("execution(*add*(pl.cbl.aop.startClass.Account, ..))")
+	//@Before("execution(*add*(pl.cbl.aop.startClass.Account, ..))") match params (..)
+	//@Before("execution(*add*(..))") //match any params (..)
+	@Before("execution(* pl.cbl.dao.*.*(..))") // return type, .*.* any class and any method (..) any params
 	public void doSmthbefore(){
 		System.out.println("we are doing this before method now update");
 	}
